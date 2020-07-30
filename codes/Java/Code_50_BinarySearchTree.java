@@ -1,5 +1,3 @@
-package demo_03;
-
 class Node {
     int value;
     Node parent;
@@ -105,20 +103,5 @@ public class Code_50_BinarySearchTree {
         }
 
         return node;
-    }
-
-    public static void main(String[] args) {
-        root = new Node(5, null, null, null);
-        insert(7);
-        insert(3);
-        insert(1);
-        insert(4);
-        insert(2);
-        insert(3);
-
-        System.out.println(root.value);
-        System.out.println(root.left.value + " " + root.right.value);
-        System.out.println(root.left.left.value + " " + root.left.right.value);
-        System.out.println(root.left.left.right.value + " " + root.left.right.left.value);
     }
 }
